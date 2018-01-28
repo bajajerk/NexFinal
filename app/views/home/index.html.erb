@@ -587,7 +587,8 @@
               <!-- #app-part-3 layer-->
               <div class="layer" id="app-part-3" data-depth="0.40"></div>
               <!-- end #app-part-3 layer--><!-- <img class="iPad layer hidden-xs" data-depth="0.20" src="./images/parallax/par-app-iPad.png" alt="iPad"> -->
-                    <%= image_tag ('parallax/par-app-iPad.png') %>
+              <%= image_tag("parallax/par-app-iPad.png", alt: "iPad" , class: "iPad layer hidden-xs") %>
+
             </div>
 
             <!-- end #app-parallax app-parallax-->
@@ -799,7 +800,14 @@
               <!-- item active-->
               <div class="item active">
                 <!-- photo-collection-->
-                <div class="photo-collection"><img class="modal-first hidden-md hidden-sm hidden-xs" src="#" alt="modal first"><img class="md-modal-first hidden-lg hidden-xs hidden-sm" src="#" alt="small modal first"><img class="xs-modal-first hidden-lg hidden-md hidden-sm" src="#" alt="small modal first"></div>
+                <div class="photo-collection">
+                  <img class="modal-first hidden-md hidden-sm hidden-xs" src="#" alt="modal first">
+                  <img class="md-modal-first hidden-lg hidden-xs hidden-sm" src="#" alt="small modal first">
+                  <img class="xs-modal-first hidden-lg hidden-md hidden-sm" src="#" alt="small modal first">
+                  <%= image_tag( alt: "iPad" , class: "modal-first hidden-md hidden-sm hidden-xs") %>
+                  <%= image_tag("parallax/par-app-iPad.png", alt: "iPad" , class: "md-modal-first hidden-lg hidden-xs hidden-sm") %>
+                  <%= image_tag("parallax/par-app-iPad.png", alt: "iPad" , class: "xs-modal-first hidden-lg hidden-md hidden-sm") %>
+                </div>
                 <!-- end photo-->
               </div>
               <!-- end item active-->
@@ -813,7 +821,16 @@
               <!-- item-->
               <div class="item">
                 <!-- photo-collection-->
-                <div class="photo-collection"><img class="modal-all hidden-md hidden-sm hidden-xs" src="./images/collection-screen/modal-white-all.png" alt="modal all"><img class="modal-all hidden-lg hidden-xs" src="./images/collection-screen/md-modal-white-all.png" alt="small modal all"><img class="modal-all hidden-lg hidden-md hidden-sm" src="./images/collection-screen/xs-modal-white-all.png" alt="small modal all"></div>
+                <div class="photo-collection">
+                <!--   <img class="modal-all hidden-md hidden-sm hidden-xs" src="./images/collection-screen/modal-white-all.png" alt="modal all">
+                  <img class="modal-all hidden-lg hidden-xs" src="./images/collection-screen/md-modal-white-all.png" alt="small modal all">
+                  <img class="modal-all hidden-lg hidden-md hidden-sm" src="./images/collection-screen/xs-modal-white-all.png" alt="s -->
+
+                  <%= image_tag("collection-screen/modal-white-all.png", alt: "iPad" , class: "modal-all hidden-md hidden-sm hidden-xs") %>
+                  <%= image_tag("collection-screen/md-modal-white-all.png", alt: "iPad" , class: "modal-all hidden-lg hidden-xs") %>
+                
+               
+                </div>
                 <!-- end photo-->
               </div>
               <!-- end item-->
