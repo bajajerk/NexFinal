@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     user.zip=params[:zip]
   	user.country=params[:country]
     user.save
-    return redirect_to '/home/confirmation'
+    return redirect_to 'https://www.impactguru.com/fundraiser/help-nearus'
   end
 
 end
