@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/shrayshrey', as: 'rails_admin'
   get 'home/index'
   get 'home/checkout'
   get 'home/confirmation'
